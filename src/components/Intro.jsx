@@ -1,45 +1,48 @@
 import React from "react";
-import emoji from "../images/emoji-sticker.png";
-import "../styles/intro.css";
-import "../App.css";
+import Image from "next/image";
+import emoji from "../public/images/emoji-sticker.png";
 
 const Intro = () => {
   return (
     <div className="card mx-auto intro-card pb-5 pt-5">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-12 col-sm-8">
+        <div className="flex flex-col lg:flex-row items-center">
+          <div className="flex flex-col lg:w-8/12">
             <div className="pb-2">
-              <small className="main-text">Welcome to my world</small>
-              <h2 className="main-text">Hi, I'm Zach</h2>
-              <h3 className="main-text">
-                <span className="text-gradient">A </span>
-                Full Stack <span className="text-gradient">Web Developer</span>
+              <small className="text-gray-500">Welcome to my world</small>
+              <h2 className="text-3xl lg:text-4xl font-bold mt-2">Hi, I'm Zach</h2>
+              <h3 className="text-2xl lg:text-3xl">
+                <span className="text-gradient">A</span> Full Stack{" "}
+                <span className="text-gradient">Web Developer</span>
               </h3>
-              <small className="main-text">
+              <p className="text-gray-500 mt-2">
                 Utilizing a blend of technical skills, a growth mindset, and a
                 dedication to continuous learning!
-              </small>
+              </p>
             </div>
-            <div className="row">
-              <div className="col-lg-12 col-sm-5 center">
-                <a
-                  href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing"
-                  className="btn button-gradient main-text"
-                  role="button"
-                >
-                  View My Resume
-                </a>
-              </div>
+            <div className="flex mt-4">
+              <a
+                href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing"
+                className="btn button-gradient text-white px-4 py-2 rounded-md font-medium"
+                role="button"
+              >
+                View My Resume
+              </a>
             </div>
           </div>
-          <div className="col-lg-4">
-            <img
-              src={emoji}
-              alt="My memoji"
-              className=" img-border-intro"
-              style={{ zIndex: 2, maxWidth: "100%" }}
-            />
+          <div className="lg:w-4/12">
+            <div className="relative w-full h-full">
+              <Image
+                src={emoji}
+                alt="My memoji"
+                className="img-border-intro"
+                layout="responsive"
+                objectFit="contain"
+                objectPosition="center"
+                quality={100}
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
