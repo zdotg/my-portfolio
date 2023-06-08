@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import emoji from "../public/images/emoji-sticker.png";
+import emoji from "../images/emoji-sticker.png";
 import "../styles/intro.css"
+import Link from "next/link";
 
 
 const Intro = () => {
@@ -23,13 +24,13 @@ const Intro = () => {
               </p>
             </div>
             <div className="flex mt-4">
-              <a
+              <Link
                 href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing"
                 className="btn button-gradient text-white px-4 py-2 rounded-md font-medium"
                 role="button"
               >
                 View My Resume
-              </a>
+              </Link>
             </div>
           </div>
           <div className="lg:w-4/12">

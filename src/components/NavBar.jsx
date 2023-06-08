@@ -6,11 +6,11 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg bg-purple-700">
       <div className="container mx-auto px-4">
         <Link href="/">
-          <a className="navbar-brand">
+          <div className="navbar-brand">
             <div className="text-2xl font-bold text-white">
               Zach <span className="text-gradient">Gallman</span>
             </div>
-          </a>
+          </div>
         </Link>
         <button
           className="navbar-toggler"
@@ -30,22 +30,22 @@ const NavBar = () => {
           <ul className="navbar-nav pt-2">
             <li className="nav-item">
               <Link href="#About">
-                <a className="nav-link">About Me</a>
+                <div className="nav-link">About Me</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="#Skills">
-                <a className="nav-link">Skills & Certifications</a>
+                <div className="nav-link">Skills & Certifications</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="#Portfolio">
-                <a className="nav-link">Portfolio</a>
+                <div className="nav-link">Portfolio</div>
               </Link>
             </li>
             <li className="nav-item">
               <Link href="#Contact">
-                <a className="nav-link">Contact Me</a>
+                <div className="nav-link">Contact Me</div>
               </Link>
             </li>
           </ul>

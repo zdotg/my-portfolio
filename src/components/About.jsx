@@ -1,5 +1,6 @@
+'use client'
+
 import React, { useState } from "react";
-import "../App.css";
 import AboutMemoji from "../images/AboutMemoji.png";
 import "../styles/about.css";
 

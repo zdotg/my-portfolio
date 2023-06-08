@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/certs.css";
-import "../App.css";
 import Bootstrap from "../images/certificates/Bootstrap.png";
 import DSA from "../images/certificates/Data_StructuresandAlgos.png";
 import ReactNative from "../images/certificates/React_Native.png";

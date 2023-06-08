@@ -3,6 +3,7 @@ import portfolio from "../images/portfolio.png";
 import wineShop from "../images/little-wine-shop.png";
 import photography from "../images/photography.png";
 import "../styles/projects.css";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -27,12 +28,12 @@ const Projects = () => {
                       Portfolio using React, Bootstrap, JavaScript, and CSS
                     </p>
                   </div>
-                  <a
+                  <Link
                     href="https://github.com/zdotg/zg-portfolio"
                     className="btn button-gradient main-text"
                   >
                     GitHub
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -58,12 +59,12 @@ const Projects = () => {
                       This project is a work in progress.
                     </p>
                   </div>
-                  <a
+                  <Link
                     href="https://github.com/zdotg/little_wine_shop"
                     className="btn button-gradient main-text"
                   >
                     GitHub
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
