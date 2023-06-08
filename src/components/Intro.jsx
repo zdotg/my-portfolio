@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import emoji from "../public/images/emoji-sticker.png";
+import "../styles/intro.css"
+
 
 const Intro = () => {
   return (
