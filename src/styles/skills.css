@@ -1,0 +1,10 @@
+.skills-card {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #8e6e92;
+}
+
+.skills-border {
+    border-bottom: 1px solid white;
+}

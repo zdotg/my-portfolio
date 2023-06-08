@@ -1,0 +1,16 @@
+.certs-card {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    background-color: #8e6e92;
+}
+
+.enlarge {
+    width: 55%;
+    height: 55%;
+    -webkit-transition-property: width, height;
+    -webkit-transition-duration: 2s;
+    transition-property: width, height;
+    transition-duration: 2s;
+}
+
