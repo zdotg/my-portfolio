@@ -1,16 +1,17 @@
 import React from "react";
-import "../styles/header.css";
-import "../App.css";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg nav-styles nav-text">
-      <div className="container-fluid ">
-        <a href="#" className="navbar-brand" style={{ paddingLeft: "1rem" }}>
-          <div className="display-6 main-text">
-            Zach <span className="text-gradient">Gallman</span>;
-          </div>
-        </a>
+    <nav className="navbar navbar-expand-lg bg-purple-700">
+      <div className="container mx-auto px-4">
+        <Link href="/">
+          <a className="navbar-brand">
+            <div className="text-2xl font-bold text-white">
+              Zach <span className="text-gradient">Gallman</span>
+            </div>
+          </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -23,30 +24,29 @@ const NavBar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse justify-content-end"
+          className="collapse navbar-collapse justify-end"
           id="NavBar"
-          style={{ paddingRight: "1rem" }}
         >
-          <ul className="navbar-nav  pt-2">
-            <li className="nav-item ">
-              <a className="nav-link nav-text" href="#About">
-                About Me
-              </a>
+          <ul className="navbar-nav pt-2">
+            <li className="nav-item">
+              <Link href="#About">
+                <a className="nav-link">About Me</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link nav-text" href="#Skills">
-                Skills & Certifications
-              </a>
+              <Link href="#Skills">
+                <a className="nav-link">Skills & Certifications</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link nav-text" href="#Portfolio">
-                Portfolio
-              </a>
+              <Link href="#Portfolio">
+                <a className="nav-link">Portfolio</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link nav-text" href="#Contact">
-                Contact Me
-              </a>
+              <Link href="#Contact">
+                <a className="nav-link">Contact Me</a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -56,3 +56,4 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
