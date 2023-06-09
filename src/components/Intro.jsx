@@ -1,14 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import emoji from "../public/images/emoji-sticker.png";
-import "../styles/globals.css"
 import Link from "next/link";
-
 
 const Intro = () => {
   return (
-    <div className="card mx-auto intro-card pb-5 pt-5">
-      <div className="container">
+    <div className="mx-auto p-5 bg-purple-700 shadow-md">
+      <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="flex flex-col lg:w-8/12">
             <div className="pb-2">
@@ -23,13 +21,9 @@ const Intro = () => {
                 dedication to continuous learning!
               </p>
             </div>
-            <div className="flex mt-4">
-              <Link
-                href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing"
-                className="btn button-gradient text-white px-4 py-2 rounded-md font-medium"
-                role="button"
-              >
-                View My Resume
+            <div className="mt-4">
+              <Link href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing">
+                <div className="px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium">View My Resume</div>
               </Link>
             </div>
           </div>
@@ -38,7 +32,7 @@ const Intro = () => {
               <Image
                 src={emoji}
                 alt="My memoji"
-                className="img-border-intro"
+                className="rounded-full"
                 layout="responsive"
                 objectFit="contain"
                 objectPosition="center"
