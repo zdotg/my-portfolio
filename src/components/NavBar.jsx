@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 
+
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-purple-700">
+    <nav className="bg-purple-700">
       <div className="container mx-auto px-4">
         <Link href="/">
           <div className="navbar-brand">
@@ -23,10 +24,7 @@ const NavBar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div
-          className="collapse navbar-collapse justify-end"
-          id="NavBar"
-        >
+        <div className="collapse navbar-collapse justify-end" id="NavBar">
           <ul className="navbar-nav pt-2">
             <li className="nav-item">
               <Link href="#About">
@@ -56,4 +54,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
