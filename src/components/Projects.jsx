@@ -1,8 +1,8 @@
 import React from "react";
-import portfolio from "../images/portfolio.png";
-import wineShop from "../images/little-wine-shop.png";
-import photography from "../images/photography.png";
-import "../styles/projects.css";
+import portfolio from "../public/images/portfolio.png";
+import wineShop from "../public/images/little-wine-shop.png";
+import photography from "../public/images/photography.png";
+import "../styles/globals.css";
 import Link from "next/link";
 
 const Projects = () => {

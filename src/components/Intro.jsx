@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import emoji from "../images/emoji-sticker.png";
-import "../styles/intro.css"
+import emoji from "../public/images/emoji-sticker.png";
+import "../styles/globals.css"
 import Link from "next/link";
 
 

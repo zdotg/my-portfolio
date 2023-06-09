@@ -1,6 +1,7 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.css";
-import "../styles/footer.css";
+import "../styles/globals.css";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -10,41 +11,41 @@ const Footer = () => {
           <div className="col-6 text-center">
             <h5 className="main-text">Socials</h5>
             <div className="social-icons">
-              <a
+              <Link
                 className="social-icon"
                 href="https://www.instagram.com/zach.g33/"
               >
                 <i className="fab fa-instagram main-text"></i>
-              </a>
-              <a className="social-icon" href="https://github.com/zdotg">
+              </Link>
+              <Link className="social-icon" href="https://github.com/zdotg">
                 <i className="fab fa-github main-text"></i>
-              </a>
-              <a
+              </Link>
+              <Link
                 className="social-icon"
                 href="https://www.linkedin.com/in/zach-gallman/"
               >
                 <i className="fab fa-linkedin main-text"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-6 text-center">
             <div className="contact-info">
-              <a
+              <Link
                 role="button"
                 className="contact-link main-text"
                 href="tel:+13347181224"
               >
                 <i className="fas fa-phone"></i> 1-334-718-1224
-              </a>
+              </Link>
               <br />
-              <a
+              <Link
                 role="button"
                 className="contact-link main-text"
                 href="mailto:zach.ecab@gmail.com"
               >
                 <i className="fas fa-envelope main-text"></i>{" "}
                 zach.ecab@gmail.com
-              </a>
+              </Link>
               <br />
             </div>
           </div>

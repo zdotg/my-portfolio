@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState } from "react";
-import AboutMemoji from "../images/AboutMemoji.png";
-import "../styles/about.css";
+import AboutMemoji from "../public/images/AboutMemoji.png";
+import "../styles/globals.css";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
