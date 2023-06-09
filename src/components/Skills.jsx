@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/globals.css";
 
-
 const Skills = () => {
   const skills = [
     { name: "Front-End Development", progress: 80 },
@@ -14,11 +13,8 @@ const Skills = () => {
   ];
 
   return (
-    <div className="card skills-card" id="Skills">
-      <div
-        className="card-body mx-auto skills-border"
-        style={{ maxWidth: "75%" }}
-      >
+    <div className="mx-auto text-center bg-purple-700" id="Skills">
+      <div className="max-w-3/4">
         <h2 className="main-text text-center">Skills</h2>
 
         {skills.map((skill) => (
@@ -32,7 +28,7 @@ const Skills = () => {
             aria-valuemax="100"
           >
             <div
-              className="progress-bar bg-warning text-dark text-start px-2"
+              className="progress-bar bg-warning text-dark text-start px-2 w-full"
               style={{ width: `${skill.progress}%` }}
             >
               {skill.name}
@@ -40,8 +36,8 @@ const Skills = () => {
           </div>
         ))}
 
-        <div className="row align-items-center text-left mx-2 main-text">
-          <div className="col-12 col-md-4 mb-3">
+        <div className="row align-items-center text-left mx-2 main-text grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mb-3">
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -56,7 +52,7 @@ const Skills = () => {
               <li>Software Development Lifecycle</li>
             </ul>
           </div>
-          <div className="col-12 col-md-4 mb-3">
+          <div className="mb-3">
             <ul>
               <li>SCSS</li>
               <li>Responsive Web Design</li>
@@ -72,7 +68,7 @@ const Skills = () => {
               <li>React.Js</li>
             </ul>
           </div>
-          <div className="col-12 col-md-4 mb-3">
+          <div className="mb-3">
             <ul>
               <li>Redux/Context</li>
               <li>Dependencies</li>
@@ -91,7 +87,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="row text-center my-auto pb-5">
+        <div className="row text-center my-auto pb-5 flex justify-center">
           <div className="col-lg-12 center">
             <a
               href="https://github.com/zdotg"

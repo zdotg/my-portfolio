@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/globals.css";
+import Image from "next/image";
 import Bootstrap from "../public/images/certificates/Bootstrap.png";
 import DSA from "../public/images/certificates/Data_StructuresandAlgos.png";
 import ReactNative from "../public/images/certificates/React_Native.png";
@@ -13,80 +13,77 @@ import SQLData from "../public/images/certificates/Sql_Data_MOdeling.png";
 
 const Certs = () => {
   return (
-    <div className="card certs-card ">
-      <div className="card-body">
-        <h2 className="main-text text-center">Certificates</h2>
-        <div className="row text-center pb-5">
-          <div className="col-12 col-md-6 col-lg-4">
+    <div className="px-3 py-3 bg-purple-700">
+      <div>
+        <h2 className="text-center">Certificates</h2>
+        <div className="flex flex-wrap justify-center pb-5">
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={HCJ} alt="Web Dev" />
-              <p className="main-text">Web Dev Fundamentals Bootcamp</p>
+              <Image className="transform hover:scale-110 transition-transform" src={HCJ} alt="Web Dev" />
+              <p>Web Dev Fundamentals Bootcamp</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={DSA} alt="Web Dev" />
-              <p className="main-text">
-                Python Fundamentals Data Structures, and Algorithms
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={DSA} alt="Web Dev" />
+              <p>Python Fundamentals Data Structures, and Algorithms</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={SQLData} alt="Web Dev" />
-              <p className="main-text">SQL and Python</p>
+              <Image className="transform hover:scale-110 transition-transform" src={SQLData} alt="Web Dev" />
+              <p>SQL and Python</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={Modern} alt="Web Dev" />
-              <p className="main-text">
-                Modern Software Engineering with DevOps
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={Modern} alt="Web Dev" />
+              <p>Modern Software Engineering with DevOps</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={SQLDevops} alt="Web Dev" />
-              <p className="main-text">
-                Backend Python, SQL, and Devops Bootcamp
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={SQLDevops} alt="Web Dev" />
+              <p>Backend Python, SQL, and Devops Bootcamp</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={Bootstrap} alt="Web Dev" />
-              <p className="main-text">Front-End Web UI Framework: Bootstrap</p>
+              <Image className="transform hover:scale-110 transition-transform" src={Bootstrap} alt="Web Dev" />
+              <p>Front-End Web UI Framework: Bootstrap</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={ReactCert} alt="Web Dev" />
-              <p className="main-text">Front End JavaScript Library: React</p>
+              <Image className="transform hover:scale-110 transition-transform" src={ReactCert} alt="Web Dev" />
+              <p>Front End JavaScript Library: React</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={ReactNative} alt="Web Dev" />
-              <p className="main-text">
-                Multiplatform Mobile App Development with React Native
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={ReactNative} alt="Web Dev" />
+              <p>Multiplatform Mobile App Development with React Native</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={FrontEnd} alt="Web Dev" />
-              <p className="main-text">
-                Front End Web and Mobile Development Bootcamp
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={FrontEnd} alt="Web Dev" />
+              <p>Front End Web and Mobile Development Bootcamp</p>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+
+          <div className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2 mb-4">
             <div>
-              <img className="enlarge" src={FullStack} alt="Web Dev" />
-              <p className="main-text">
-                Server-side Development with NodeJS Express and MongoDB
-              </p>
+              <Image className="transform hover:scale-110 transition-transform" src={FullStack} alt="Web Dev" />
+              <p>Server-side Development with NodeJS Express and MongoDB</p>
             </div>
           </div>
         </div>
