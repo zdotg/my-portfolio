@@ -1,8 +1,6 @@
-'use client'
-
 import React, { useState } from "react";
 import AboutMemoji from "../public/images/AboutMemoji.png";
-import "../styles/globals.css";
+import Image from "next/image";
 
 const About = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,23 +10,25 @@ const About = () => {
   };
 
   return (
-    <div className="card mx-auto about-card pt-5 pb-5" id="About">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-12 col-sm-5">
-            <img
+    <div className="mx-auto bg-purple-700 shadow-md p-5" id="About">
+      <div className="container mx-auto">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="w-full md:w-1/2">
+            <Image
               src={AboutMemoji}
               alt="My memoji"
-              className=" img-border-about"
-              style={{ zIndex: 2, maxWidth: "100%" }}
+                className="rounded-full"
+                style={{layout: "responsive", objectFit: "contain", objectPosition: "center"}}
+                quality={100}
+                priority
             />
           </div>
-          <div className="col-12 col-sm-7">
+          <div className="w-full md:w-1/2">
             <div className="pb-2">
-              <h2 className="main-text">
+              <h2 className="text-lg font-bold">
                 About <span className="text-gradient">Me</span>
               </h2>
-              <small className={`main-text ${isExpanded ? "expanded" : ""}`}>
+              <p className={`text-sm ${isExpanded ? "" : "line-clamp-5 overflow-hidden"}`}>
                 I am a passionate and driven individual who discovered my love
                 for web development during the height of the pandemic. As the
                 world faced unprecedented challenges, I found solace and
@@ -69,10 +69,10 @@ const About = () => {
                     technology.
                   </>
                 )}
-              </small>
+              </p>
             </div>
             <button
-              className="btn button-gradient main-text"
+              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium"
               onClick={handleToggle}
             >
               {isExpanded ? "Read Less" : "Read More"}
