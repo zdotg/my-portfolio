@@ -2,90 +2,69 @@ import React from "react";
 import portfolio from "../public/images/portfolio.png";
 import wineShop from "../public/images/little-wine-shop.png";
 import photography from "../public/images/photography.png";
-import "../styles/globals.css";
-import Link from "next/link";
+import Image from 'next/image'
 
 const Projects = () => {
   return (
-    <section id="Portfolio" className="project-section">
-      <div class="container">
-        <div className="row ">
-          <h2 className="main-text text-center">Projects</h2>
-          <div className="col-12 col-md-6 col-lg-4" style={{ padding: 0 }}>
-            <div className="card project-card d-flex flex-column h-100 mb-3 mx-auto">
-              <img
+    <section className="bg-purple-700">
+      <div className="container mx-auto px-4">
+        <h2 className="text-center">Projects</h2>
+        <div className="flex flex-wrap justify-center">
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-0">
+            <div className="flex flex-col h-full mb-3 mx-auto overflow-hidden">
+              <Image
                 src={portfolio}
-                className="card-img-top img-fluid"
+                className="w-full object-cover"
                 alt="Portfolio Snippet"
               />
-              <div className="card-body main-text d-flex flex-grow-1">
-                <div className="d-flex flex-column justify-content-between">
+              <div className="flex flex-grow p-4">
+                <div className="flex flex-col justify-between h-full">
                   <div>
-                    <h5 className="card-title text-gradient pt-3">
-                      Personal Portfolio
-                    </h5>
-                    <p className="card-text">
-                      Portfolio using React, Bootstrap, JavaScript, and CSS
-                    </p>
+                    <h5 className="pt-3">Personal Portfolio</h5>
+                    <p>Portfolio using React, Bootstrap, JavaScript, and CSS</p>
                   </div>
-                  <Link
-                    href="https://github.com/zdotg/zg-portfolio"
-                    className="btn button-gradient main-text"
-                  >
-                    GitHub
-                  </Link>
+                  <div href="https://github.com/zdotg/zg-portfolio">
+                    <a className="mt-4">GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4" style={{ padding: 0 }}>
-            <div className="card project-card d-flex flex-column h-100 mb-3 mx-auto">
-              <img
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-0">
+            <div className="flex flex-col h-full mb-3 mx-auto overflow-hidden">
+              <Image
                 src={wineShop}
-                className="card-img-top img-fluid"
+                className="w-full object-cover"
                 alt="Little Wine Shop"
               />
-              <div className="card-body main-text d-flex flex-grow-1">
-                <div className="d-flex flex-column justify-content-between">
+              <div className="flex flex-grow p-4">
+                <div className="flex flex-col justify-between h-full">
                   <div>
-                    <h5 className="card-title text-gradient">
-                      Little Wine Shop
-                    </h5>
-                    <p className="card-text">
-                      Mock Wine Shop using React, Bootstrap, JavaScript,
-                      MongoDB, and CSS
-                    </p>
-                    <p className="card-text" style={{ fontSize: ".75rem" }}>
-                      This project is a work in progress.
-                    </p>
+                    <h5>Little Wine Shop</h5>
+                    <p>Mock Wine Shop using React, Bootstrap, JavaScript,
+                      MongoDB, and CSS</p>
+                    <p className="text-sm">This project is a work in progress.</p>
                   </div>
-                  <Link
-                    href="https://github.com/zdotg/little_wine_shop"
-                    className="btn button-gradient main-text"
-                  >
-                    GitHub
-                  </Link>
+                  <div href="https://github.com/zdotg/little_wine_shop">
+                    <a className="mt-4">GitHub</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4" style={{ padding: 0 }}>
-            <div className="card project-card d-flex flex-column h-100 mx-auto">
-              <img
+          <div className="w-full sm:w-1/2 lg:w-1/3 p-0">
+            <div className="flex flex-col h-full mb-3 mx-auto overflow-hidden">
+              <Image
                 src={photography}
-                className="card-img-top img-fluid"
+                className="w-full object-cover"
                 alt="Photography Portfolio"
               />
-              <div className="card-body main-text d-flex flex-grow-1">
-                <div className="d-flex flex-column justify-content-between">
+              <div className="flex flex-grow p-4">
+                <div className="flex flex-col justify-between h-full">
                   <div>
-                    <h5 className="card-title text-gradient">
-                      Photography Portfolio
-                    </h5>
-                    <p className="card-text">Personal photography portfolio.</p>
-                    <p className="card-text" style={{ fontSize: ".75rem" }}>
-                      This project is a work in progress.
-                    </p>
+                    <h5>Photography Portfolio</h5>
+                    <p>Personal photography portfolio.</p>
+                    <p className="text-sm">This project is a work in progress.</p>
                   </div>
                 </div>
               </div>

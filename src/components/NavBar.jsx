@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/">
           <div className="text-2xl font-bold text-white cursor-pointer">
-            Zach <span className="text-gradient">Gallman</span>
+            Zach <span className="text-gradient">Gallman</span>;
           </div>
         </Link>
         <button
