@@ -8,7 +8,7 @@ const Intro = () => {
     <div className="p-5 bg-purple-700 shadow-md">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center mx-auto" style={{maxWidth: "85%"}}>
-          <div className="flex flex-col lg:w-9/12">
+          <div className="flex flex-col lg:w-2/3">
             <div className="pb-2">
               <small className="text-white-500">Welcome to my world</small>
               <h2 className="text-3xl lg:text-4xl font-bold mt-2">Hi, I&apos;m Zach</h2>
@@ -27,13 +27,13 @@ const Intro = () => {
               </Link>
             </div>
           </div>
-          <div className="lg:w-3/12">
+          <div className="lg:w-1/3">
             <div className="relative w-full h-full">
               <Image
                 src={emoji}
                 alt="My memoji"
-                width={250}
-                height={250}
+                // width={250}
+                // height={250}
                 className="rounded-full"
                 style={{layout: "responsive", objectFit: "contain", objectPosition: "center"}}
                 quality={100}

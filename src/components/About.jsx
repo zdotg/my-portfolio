@@ -11,21 +11,19 @@ const About = () => {
 
   return (
     <div className="mx-auto bg-purple-700 shadow-md p-5" id="About">
-      <div className="container mx-auto" style={{maxWidth: "85%"}}>
+      <div className="container mx-auto" style={{maxWidth: "75%"}}>
         <div className="flex flex-col md:flex-row items-center">
-          <div className="w-full md:w-1/3 pr-2">
+          <div className="w-full md:w-1/2 pr-2">
             <Image
               src={AboutMemoji}
               alt="My memoji"
-              height={250}
-              width={250}
               className="rounded-full"
               style={{layout: "responsive", objectFit: "contain", objectPosition: "center"}}
               quality={100}
               priority
             />
           </div>
-          <div className="w-full md:w-2/3 pl-3">
+          <div className="w-full md:w-1/2 pl-3">
             <div className="pb-2">
               <h2 className="text-lg font-bold">
                 About <span className="text-gradient">Me</span>
