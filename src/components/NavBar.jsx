@@ -14,7 +14,7 @@ const NavBar = () => {
     <nav className="bg-purple-700 p-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/">
-          <div className="text-2xl font-bold text-white cursor-pointer">
+          <div className="text-3xl font-bold text-white cursor-pointer">
             Zach <span className="text-gradient">Gallman</span>;
           </div>
         </Link>

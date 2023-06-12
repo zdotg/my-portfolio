@@ -24,12 +24,12 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    font-family: 'Oxygen', sans-serif;
 }
 
 /* styles/global.css */
 .App {
   text-align: center;
+  font-family: 'Oxygen', sans-serif;
 }
 
 .list-style-none {
