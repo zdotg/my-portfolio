@@ -17,7 +17,7 @@ const Experience = () => {
                 </h4>
                 <ul className="text-center">
                   <li className="pt-2 main-text list-none text-sm">
-                    NuCamp's Full Stack Mobile and Web Development Bootcamp
+                    NuCamp&apos;s Full Stack Mobile and Web Development Bootcamp
                   </li>
                   <small className="main-text text-xs">GRADUATED May 2023</small>
                   <li className="pt-2 main-text list-none">B.S. from The University of Montevallo</li>

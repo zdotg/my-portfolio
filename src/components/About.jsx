@@ -64,9 +64,7 @@ const About = () => {
                     and enthusiasm to create innovative solutions and make a
                     positive impact. I am open to new opportunities and would
                     love to connect with companies that value creativity,
-                    collaboration, and a strong commitment to excellence. Let's
-                    work together to shape the future through the power of
-                    technology.
+                    collaboration, and a strong commitment to excellence. 
                   </>
                 )}
               </p>
