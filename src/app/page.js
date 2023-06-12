@@ -1,5 +1,6 @@
 "use client";
 
+import "../styles/globals.css";
 import React from "react";
 import Head from "next/head";
 import NavBar from "@/components/NavBar";

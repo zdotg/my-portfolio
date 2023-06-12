@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <div className="mx-auto p-5 bg-purple-700 shadow-md">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row items-center">
-          <div className="flex flex-col lg:w-8/12">
+    <div className="p-5 bg-purple-700 shadow-md">
+      <div className="container">
+        <div className="flex flex-col lg:flex-row items-center mx-auto" style={{maxWidth: "85%"}}>
+          <div className="flex flex-col lg:w-9/12">
             <div className="pb-2">
               <small className="text-white-500">Welcome to my world</small>
               <h2 className="text-3xl lg:text-4xl font-bold mt-2">Hi, I&apos;m Zach</h2>
@@ -21,17 +21,19 @@ const Intro = () => {
                 dedication to continuous learning!
               </p>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 ">
               <Link legacyBehavior href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing">
-                <a className="px-4 py-2 inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium">View My Resume</a>
+                <a className="px-4 py-2 inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium ">View My Resume</a>
               </Link>
             </div>
           </div>
-          <div className="lg:w-4/12">
+          <div className="lg:w-3/12">
             <div className="relative w-full h-full">
               <Image
                 src={emoji}
                 alt="My memoji"
+                width={250}
+                height={250}
                 className="rounded-full"
                 style={{layout: "responsive", objectFit: "contain", objectPosition: "center"}}
                 quality={100}
