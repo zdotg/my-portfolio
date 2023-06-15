@@ -10,14 +10,14 @@ const About = () => {
   };
 
   return (
-    <div className="mx-auto bg-purple-700 shadow-md p-5" id="About">
+    <div className="mx-auto bg-white text-stone-700 shadow-md p-5" id="About">
       <div className="container mx-auto" style={{maxWidth: "75%"}}>
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 pr-2">
             <Image
               src={AboutMemoji}
               alt="My memoji"
-              className="rounded-full"
+              className="rounded-l-full"
               style={{layout: "responsive", objectFit: "contain", objectPosition: "center"}}
               quality={100}
               priority
@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2 pl-3">
             <div className="pb-2">
-              <h2 className="text-lg font-bold">
+              <h2 className="text-2xl ">
                 About <span className="text-gradient">Me</span>
               </h2>
               <p className={`text-sm ${isExpanded ? "" : "line-clamp-5 overflow-hidden"}`}>
