@@ -263,11 +263,11 @@ body {
 
 .border-style-one {
   width: 45px;
-  border-bottom: 1px solid #fcfcf7;
+  border-bottom: 1px solid grey;
 }
 
 .border-style-two {
-  border: 1px solid white;
+  border: 1px solid grey;
 }
 
 /* FOOTER */    

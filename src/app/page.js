@@ -6,7 +6,7 @@ import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Intro from "@/components/Intro";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
+import AcademicExperience from "@/components/AcademicExperience";
 import Skills from "@/components/Skills";
 import Certs from "@/components/Certs";
 import Projects from "@/components/Projects";
@@ -24,8 +24,8 @@ export default function Home() {
       <NavBar />
       <main>
         <Intro />
+        <AcademicExperience />
         <About />
-        <Experience />
         <Skills />
         <Certs />
         <Projects />
