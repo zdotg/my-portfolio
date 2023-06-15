@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <div className="flex-col items-center justify-center 
     px-12 py-5 w-10/12 mx-auto border flex text-center bg-indigo-50 text-slate-700">
-      <button onClick={toggleDropdown} className="px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium place-content-center">
+      <button onClick={toggleDropdown} className="px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium place-content-center hover:scale-105 transition-transform duration-200">
         Experience
       </button>
 
@@ -20,11 +20,11 @@ const Experience = () => {
           <thead>
             <tr>
               <th className="border border-none">
-                <h4 className="text-center">
-                  <span className="text-gradient border-style-one">Job</span> Experience
+                <h4 className="text-center font-normal">
+                  <span className="text-gradient border-style-one ">Job</span> Experience
                 </h4>
               </th>
-              <th className="border-none">Tenure</th>
+              <th className="border-none font-light">Tenure</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white">
@@ -53,11 +53,11 @@ const Experience = () => {
           <thead>
             <tr>
               <th className="border border-none px-3">
-                <h4 className="text-center">
+                <h4 className="text-center font-normal">
                   <span className="text-gradient border-style-one">Academic</span> Qualifications
                 </h4>
               </th>
-              <th className="border border-none px-3">Graduated</th>
+              <th className="border border-none px-3 font-light">Graduated</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-white pt-3">

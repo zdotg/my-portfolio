@@ -14,7 +14,7 @@ const NavBar = () => {
     <nav className="bg-white p-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/">
-          <div className="text-3xl  text-stone-700 cursor-pointer">
+          <div className="text-3xl font-light text-stone-700 cursor-pointer">
             Zach <span className="text-gradient">Gallman</span>;
           </div>
         </Link>
@@ -25,7 +25,7 @@ const NavBar = () => {
           <span className="fas fa-bars text-stone-700"></span>
         </button>
         <div className={`md:flex items-center ${isOpen ? '' : 'hidden'}`}>
-          <ul className="md:flex space-x-4">
+          <ul className="md:flex space-x-4 nav-gradient">
             <li className="nav-item">
               <Link href="#About">
                 <div className="text-stone-700 cursor-pointer">About Me</div>

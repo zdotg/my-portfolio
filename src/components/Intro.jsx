@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Intro = () => {
   return (
-    <div className="p-5 bg-white text-stone-700 shadow-md">
+    <div className="p-5 bg-white text-stone-700 font-light shadow-md">
       <div className="container">
         <div className="flex flex-col lg:flex-row items-center mx-auto" style={{maxWidth: "85%"}}>
           <div className="flex flex-col lg:w-2/3">
@@ -22,7 +22,7 @@ const Intro = () => {
             </div>
             <div className="mt-4 ">
               <Link legacyBehavior href="https://docs.google.com/document/d/1SCSk4tESLYwq_Ru8s5Hs9RYuQtkVeKgn_vGYJJchrAc/edit?usp=sharing">
-                <a className="px-4 py-2 inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium ">View My Resume</a>
+                <a className="px-4 py-2 inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium hover:scale-105 transition-transform duration-200">View My Resume</a>
               </Link>
             </div>
           </div>

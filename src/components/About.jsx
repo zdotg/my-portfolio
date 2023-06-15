@@ -25,7 +25,7 @@ const About = () => {
           </div>
           <div className="w-full md:w-1/2 pl-3">
             <div className="pb-2">
-              <h2 className="text-2xl ">
+              <h2 className="text-2xl font-light">
                 About <span className="text-gradient">Me</span>
               </h2>
               <p className={`text-sm ${isExpanded ? "" : "line-clamp-5 overflow-hidden"}`}>
@@ -70,7 +70,7 @@ const About = () => {
               </p>
             </div>
             <button
-              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium"
+              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium hover:scale-105 transition-transform duration-200"
               onClick={handleToggle}
             >
               {isExpanded ? "Read Less" : "Read More"}

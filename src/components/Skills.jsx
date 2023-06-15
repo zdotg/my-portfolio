@@ -2,42 +2,12 @@ import React from "react";
 import "../styles/globals.css";
 
 const Skills = () => {
-  const skills = [
-    { name: "Front-End Development", progress: 80 },
-    { name: "Back-End Development", progress: 60 },
-    { name: "Full-Stack Development", progress: 65 },
-    { name: "Database and Data Management", progress: 55 },
-    { name: "DevOps and Deployment", progress: 50 },
-    { name: "Software Development Practices and Tools", progress: 70 },
-    { name: "Communication and Teamwork", progress: 90 },
-  ];
-
   return (
-    <div className="mx-auto text-center bg-purple-700" id="Skills">
+    <div className="flex justify-center bg-indigo-50 text-slate-700" id="Skills">
       <div className="max-w-3/4">
-        <h2 className="main-text text-center">Skills</h2>
-
-        {skills.map((skill) => (
-          <div
-            className="progress mb-3"
-            key={skill.name}
-            role="progressbar"
-            aria-label={skill.name}
-            aria-valuenow={skill.progress}
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div
-              className="progress-bar bg-warning text-dark text-start px-2 w-full"
-              style={{ width: `${skill.progress}%` }}
-            >
-              {skill.name}
-            </div>
-          </div>
-        ))}
-
-        <div className="row align-items-center text-left mx-2 main-text grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="mb-3">
+        <h2 className="text-center text-3xl font-light py-5 animate-char">Skills</h2>
+        <div className="row  py-5 text-center  text-slate-700 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="mb-3 leading-relaxed capitalize hover:scale-125 ">
             <ul>
               <li>HTML</li>
               <li>CSS</li>
@@ -50,9 +20,10 @@ const Skills = () => {
               <li>Bootstrap</li>
               <li>Cloud Deployments (AWS, GCS, Azure)</li>
               <li>Software Development Lifecycle</li>
+              <li>DevOps</li>
             </ul>
           </div>
-          <div className="mb-3">
+          <div className="mb-3 leading-relaxed capitalize hover:scale-125">
             <ul>
               <li>SCSS</li>
               <li>Responsive Web Design</li>
@@ -68,13 +39,12 @@ const Skills = () => {
               <li>React.Js</li>
             </ul>
           </div>
-          <div className="mb-3">
+          <div className="mb-3 leading-relaxed capitalize hover:scale-125">
             <ul>
               <li>Redux/Context</li>
               <li>Dependencies</li>
               <li>Version Control</li>
               <li>NoSQL Databases</li>
-              <li>DevOps</li>
               <li>MongoDB/Atlas</li>
               <li>Docker and Kubernetes</li>
               <li>Flask/Insomnia</li>
@@ -87,11 +57,11 @@ const Skills = () => {
           </div>
         </div>
 
-        <div className="row text-center my-auto pb-5 flex justify-center">
+        <div className="row text-center my-auto py-5 flex justify-center">
           <div className="col-lg-12 center">
             <a
               href="https://github.com/zdotg"
-              className="btn button-gradient main-text"
+              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium hover:scale-105 transition-transform duration-200"
               role="button"
             >
               My GitHub
