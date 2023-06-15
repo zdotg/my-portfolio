@@ -1,0 +1,81 @@
+import React, { useState } from 'react';
+import '../styles/globals.css';
+
+const Experience = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="flex-col items-center justify-center 
+    px-12 py-5 w-10/12 mx-auto border flex text-center bg-indigo-50 text-slate-700">
+      <button onClick={toggleDropdown} className="px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium place-content-center">
+        Experience
+      </button>
+
+      <div className={`w-1/2 pt-5 px-4 ${isOpen ? '' : 'hidden'}`}>
+        <table className="border-none">
+          <thead>
+            <tr>
+              <th className="border border-none">
+                <h4 className="text-center">
+                  <span className="text-gradient border-style-one">Job</span> Experience
+                </h4>
+              </th>
+              <th className="border-none">Tenure</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white">
+            <tr>
+              <td className="border border-none pr-4...">Crocodile Wine - Wine Sales Specialist</td>
+              <td className="border border-none ...">2021-present</td>
+            </tr>
+            <tr>
+              <td className="border border-none pr-4 ...">Windsor Boutique Hotel - Hotel Concierge</td>
+              <td className="border border-none ...">2020-present</td>
+            </tr>
+            <tr>
+              <td className="border border-none pr-4...">Wine Sales Specialist</td>
+              <td className="border border-none ..">2018-present</td>
+            </tr>
+            <tr>
+              <td className="border border-none pr-4...">Bottle Riot - Bartender</td>
+              <td className="border border-none ...">2017-2019</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className={`w-1/2 pt-5 ${isOpen ? '' : 'hidden'}`}>
+        <table className="border border-none">
+          <thead>
+            <tr>
+              <th className="border border-none px-3">
+                <h4 className="text-center">
+                  <span className="text-gradient border-style-one">Academic</span> Qualifications
+                </h4>
+              </th>
+              <th className="border border-none px-3">Graduated</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-white pt-3">
+            <tr>
+              <td className="border border-none px-3...">
+                NuCamp&apos;s Full Stack Mobile and Web Development Bootcamp
+              </td>
+              <td className="border border-none px-3 ...">May 2023</td>
+            </tr>
+            <tr>
+              <td className="border border-none px-3 ...">B.S. from The University of Montevallo</td>
+              <td className="border border-none px-3 ...">May 2013</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Experience;
