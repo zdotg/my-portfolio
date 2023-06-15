@@ -6,6 +6,17 @@ const Skills = () => {
     <div className="flex justify-center bg-indigo-50 text-slate-700" id="Skills">
       <div className="max-w-3/4">
         <h2 className="text-center text-3xl font-light py-5 animate-char">Skills</h2>
+        <div className="row text-center my-auto py-5 flex justify-center">
+          <div className="col-lg-12 center">
+            <a
+              href="https://github.com/zdotg"
+              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium hover:scale-105 transition-transform duration-200"
+              role="button"
+            >
+              My GitHub
+            </a>
+          </div>
+        </div>
         <div className="row  py-5 text-center  text-slate-700 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="mb-3 leading-relaxed capitalize hover:scale-125 ">
             <ul>
@@ -54,18 +65,6 @@ const Skills = () => {
               <li>Node.js</li>
               <li>Express.js</li>
             </ul>
-          </div>
-        </div>
-
-        <div className="row text-center my-auto py-5 flex justify-center">
-          <div className="col-lg-12 center">
-            <a
-              href="https://github.com/zdotg"
-              className="mt-4 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium hover:scale-105 transition-transform duration-200"
-              role="button"
-            >
-              My GitHub
-            </a>
           </div>
         </div>
       </div>
