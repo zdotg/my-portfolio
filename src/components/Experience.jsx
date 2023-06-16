@@ -9,13 +9,14 @@ const Experience = () => {
   };
 
   return (
-    <div className="flex-col items-center justify-center 
-    px-12 py-5 w-10/12 mx-auto border flex text-center bg-indigo-50 text-slate-700">
+    <div className="dark:bg-slate-800">
+       <div className="flex-col items-center justify-center dark:bg-slate-600 dark:rounded dark:border-none
+    px-12 py-5 w-10/12  mx-auto border flex text-center bg-indigo-50 text-slate-700">
       <button onClick={toggleDropdown} className="px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium place-content-center hover:scale-105 transition-transform duration-200">
         Experience
       </button>
 
-      <div className={`w-1/2 pt-5 px-4 ${isOpen ? '' : 'hidden'}`}>
+      <div className={`w-1/2 pt-5 px-4 dark:text-slate-100 ${isOpen ? '' : 'hidden'}`}>
         <table className="border-none">
           <thead>
             <tr>
@@ -48,7 +49,7 @@ const Experience = () => {
         </table>
       </div>
 
-      <div className={`w-1/2 pt-5 ${isOpen ? '' : 'hidden'}`}>
+      <div className={`w-1/2 pt-5 dark:text-slate-100 ${isOpen ? '' : 'hidden'}`}>
         <table className="border border-none">
           <thead>
             <tr>
@@ -75,6 +76,8 @@ const Experience = () => {
         </table>
       </div>
     </div>
+    </div>
+   
   );
 };
 
