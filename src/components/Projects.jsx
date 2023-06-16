@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Projects = () => {
   return (
-    <section className="bg-purple-700">
+    <section className="bg-white text-slate-700">
       <div className="container mx-auto px-4">
         <h2 className="text-center">Projects</h2>
         <div className="flex flex-wrap justify-center">

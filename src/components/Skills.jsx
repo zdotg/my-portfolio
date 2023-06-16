@@ -3,7 +3,7 @@ import "../styles/globals.css";
 
 const Skills = () => {
   return (
-    <div className="flex justify-center bg-indigo-50 text-slate-700" id="Skills">
+    <div className="flex justify-center bg-white text-slate-700 shadow-md" id="Skills">
       <div className="max-w-3/4">
         <h2 className="text-center text-3xl font-light py-5 animate-char">Skills</h2>
         <div className="row text-center my-auto py-5 flex justify-center">

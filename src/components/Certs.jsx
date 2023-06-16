@@ -20,7 +20,7 @@ const Certs = () => {
   };
   return (
     <div>
-      <div className="bg-indigo-50  text-center">
+      <div className="bg-indigo-50  text-center  py-5 w-10/12 mx-auto">
         <button onClick={toggleCertificates} className="block mx-auto mb-5 px-4 py-2 bg-gradient-to-r from-purple-500 to-indigo-600 text-white rounded-md font-medium">
           {showCertificates ? 'Hide Certificates' : 'Show Certificates'}
         </button>
