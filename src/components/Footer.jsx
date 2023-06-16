@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 
 const Footer = () => {
   return (
-    <footer className="text-center bg-purple-700 py-6">
+    <footer className="text-center text-white bg-indigo-300 py-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="text-center">

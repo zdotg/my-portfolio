@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -60,11 +62,6 @@ body {
   text-align: center;
 }
 
-.list-style-none {
-  list-style-type: none;
-}
-/* button styles */
-
 .button-gradient {
   background: rgb(182,34,195);
   background: linear-gradient(75deg, rgb(192, 55, 205) 0%, rgba(253,163,45,1) 100%);
@@ -100,110 +97,17 @@ body {
   }
 }
 
-.button {
-  background: #fcfcf7;
-  transition: color 0.3s;
-}
-
-/* CONTACT */ 
-.contact-section {
-  border-radius: 0;
-  border: none;
-  background-color: #8e6e92;
-  padding: 0;
-}
-
-.form-text {
-  color: #8d5b94;
-}
-
-.submit-button {
-  color: white;
-}
-
-/* EXPERIENCE */
-.experience-card {
-  padding: 0;
-  border-radius: 0;
-  border: none;
-  background-color: #8d5b94;
-}
-
-.border-style-one {
-  width: 45px;
-  border-bottom: 1px solid grey;
-}
-
-.border-style-two {
-  border: 1px solid grey;
-}
-
-/* FOOTER */    
-
-.footer-section {
-  border-radius: 0;
-  border: none;
-  background-color: #8d5b94;
-  padding: 0;
-}
-
-@import "~@fortawesome/fontawesome-free/css/all.css";
-
-/* INTRO */
-.intro-card {
-  padding: 1em;
-  border-radius: 0;
-  border: none;
-  background-color:  #8d5b94;
-  margin: 0;
-}
 
 
-.img-border-intro {
-  border-bottom: 1px solid #fcfcf785;
-  border-right: 1px dashed #fcfcf785;
-  margin: 0;
-}
-
-/* NAVBAR */
-.nav-styles {
-  background-color: #8e5596;
-  padding: 0; 
-  margin: 0;
-}
-
-.nav-text {
-  color: #fcfcf7;
-}
-.nav-text:hover{
-  color:  rgba(253,163,45,1);
-}
-
-/* PROJECTS */
-
-.project-section {
-  border-radius: 0;
-  border: none;
-  background-color: #8d5b94;
-  padding: 0;
-}
 
 
-.project-card {
-  max-width: 15rem;
-  background-color: #8d5b94;
-  padding: 0;
-}
 
 
-/* SKILLS */  
-.skills-card {
-  padding: 0;
-  border-radius: 0;
-  border: none;
-  background-color: #8e6e92;
-}
 
-.skills-border {
-  border-bottom: 1px solid white;
-}
+
+
+
+
+
+
+
