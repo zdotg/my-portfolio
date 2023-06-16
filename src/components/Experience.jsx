@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/globals.css';
+
 
 const Experience = () => {
   const [isOpen, setIsOpen] = useState(false);
