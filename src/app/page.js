@@ -3,15 +3,15 @@
 import "../styles/globals.css";
 import React from "react";
 import Head from "next/head";
-import NavBar from "@/components/NavBar";
-import Intro from "@/components/Intro";
-import About from "@/components/About";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Certs from "@/components/Certs";
-import Projects from "@/components/Projects";
-import Contact from "../components/Contact";
-import Footer from "@/components/Footer";
+import NavBar from "@/pages/NavBar";
+import Intro from "@/pages/Intro";
+import About from "@/pages/About";
+import Experience from "@/pages/Experience";
+import Skills from "@/pages/Skills";
+import Certs from "@/pages/Certs";
+import Projects from "@/pages/Projects";
+import Contact from "../pages/Contact";
+import Footer from "@/pages/Footer";
 // Import other components as needed
 
 export default function Home() {
